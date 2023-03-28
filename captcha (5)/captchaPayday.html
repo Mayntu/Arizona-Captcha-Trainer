@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="captchaPayday.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&family=Scada&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.blast.hk/attachments/69675/" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Captcha Arizona RP</title>
+    <div id="controlPanelClassId" class="controlPanel">
+        <p id="controlPanelInfoId" onclick="window.location.href = 'info.html';">Info</p>
+        <p id="controlPanelId">Control</p>
+        <hr id="controlPanelLineId">
+        <button id="controlPanelElement1" onclick="window.location.href = 'captchaKey.html';">Key</button>
+        <button id="controlPanelElement2" onclick="window.location.href = 'captcha.html';">Volley</button>
+        <button id="controlPanelElement3">Payday</button>
+        <button id="controlPanelElement4" onclick="window.location.href = 'captchaReal.html';">Real</button>
+        <button id="controlPanelElement5" onclick="window.location.href = 'captchaRandom.html';">Test</button>
+    </div>
+</head>
+<body class="body" id="body">
+    <div id="chatClassId" class="chat">
+    </div>
+    <div id="newClassChatClassId" class="chat">
+    </div>
+    <div class="main" id="mainId">
+        <div class="captchaTittle">
+            <p>Captcha Practice</p>
+        </div>
+        <!-- <p class="emptyObject">a</p> -->
+        <div class="captcha" id="captchaClassId">
+            <p id="captchaId"></p>
+        </div>
+        <br>
+        <div class="captchaInputBlock" id="captchaInputBlockId">
+            <p id="robotText">Проверка на робота</p>
+            <p id="vvediteText">Введите <span class="colorVvediteText">5</span> символов, которые<br>
+            <p id="vvediteText2"><span class="colorVvediteText">видны</span> на вашем экране</p>
+            <div class="captchaInput" id="captchaInputNormalId">
+                <input type="text" id="captchaInputId" class="captchaInput" placeholder="Введите цифры" autofocus>
+            </div>
+            <div class="captchaButton">
+                <button id="captchaButtonId" onclick="">Принять</button>
+                <button id="escapeButtonId" onclick="">Отмена</button>
+            </div>
+        </div>
+    </div>
+    <div class="paydaySettings">
+        <p id="paydaySettingsTittleId">Настройки</p>
+        <p id="delay">Задержка:</p>
+        <input type="text" id="delayValue" placeholder="sec" value="2">
+        <p id="buttonSet">Кнопка:</p>
+        <input type="text" id="buttonSetValue" placeholder="key" value="KeyN" maxlength="1" onfocus="this.focused=true;" onblur="this.focused=false;">
+        <p id="limit">Макс. 5</p>
+        <p id="autoEnter">Авто Ent</p>
+    </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="limitValueId" name="limitValueId">
+        <label for="limitValueId"></label>
+        <input class="custom-checkbox" type="checkbox" id="autoEnterValueId" name="autoEnterValueId">
+        <label for="autoEnterValueId"></label>
+      </div>
+    <div id="scoreId"class="score">
+        <p id="table">Таблица</p>
+        <div class="currentScore">
+            <p>Текущий счёт:</p>
+            <p id="currentScoreId">
+                0
+            </p>
+        </div>
+        <div class="bestScore">
+            <p>Лучший результат:</p>
+            <p id="bestScoreId">0</p>
+        </div>
+        <div class="currentTime">
+            <p>Текущее время:</p>
+            <p id="currentTimeId">00:00</p>
+        </div>
+        <div class="bestTime">
+            <p>Лучшее время:</p>
+            <p id="bestTimeId">00:00</p>
+        </div>
+        <div class="bestCaptcha" id="bestCaptchaClassId">
+            <p id="bestCaptchaId">00000</p>
+        </div>
+    </div>
+    <script src='captchaPayday.js'></script>
+    
+</body>
+</html>
